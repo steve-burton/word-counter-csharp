@@ -9,21 +9,21 @@ This program will take a user word and a string of words and return the number o
 
 These are the steps I'll take to write my code:
 
-This is the first test.
-* Input: XXXX
-* Output: XXXX
+Take a user input word and find it in a second user input string that consists of the same word.
+* Input: word, "hello"; string, "hello"
+* Output: "hello"
 
-This is the second test.
-* Input: XXXX
-* Output: XXXX
+When the user input word matches the word in the input string, count one match.
+* Input: word, "hello"; string, "hello"
+* Output: 1
 
-This is the third test.
-* Input: XXXX
-* Output: XXXX
+Take a user input word and find it in a second user input string of multiple words. Return the number of matches.
+* Input: word, "hello"; string, "Hello there friend!"
+* Output: 1
 
-This is the fourth test.
-* Input: XXXX
-* Output: XXXX
+Take a user input word and find it in a second user input string that contains multiple matches. Return the number of matches.
+* Input: My friend said "hello", and I said, "hello" back.
+* Output: 2
 
 
 ## Setup/Installation Requirements
