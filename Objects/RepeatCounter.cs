@@ -9,15 +9,16 @@ namespace WordCounter
 	{
 		public string UserWord {get; set;}
 		public string UserSentence {get; set;}
-		public int wordsCounted = 0;
 
 		// string[] wordArray = UserSentence.Split(" ");
-		string[] wordArray = UserSentence;
 		// List<string> countList = new List<string>{};
-		public CountRepeats(string userWord, string userSentence)
+		public string CountRepeats(string userWord, string userSentence)
 		{
 			this.UserWord = userWord;
 			this.UserSentence = userSentence;
+			string[] wordArray = this.UserSentence.Split();
+			int wordsCounted = 0;
+			string finalCount = "";
 
 			// int wordsCounted = countList.Count;
 
@@ -25,8 +26,9 @@ namespace WordCounter
 			if (wordFound == this.UserWord)
 			{
 				wordsCounted += 1;
+				finalCount = wordsCounted.ToString();
 			}
-			return wordsCounted;
+			return finalCount;
 		}
 	}
 }
