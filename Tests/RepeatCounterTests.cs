@@ -26,15 +26,14 @@ namespace WordCounter.Objects
       Assert.Equal(1, wordsCounted);
     }
 
-    // [Fact]
-    // public void CountRepeats_CountSingleWordFind_1()
-    // {
-    //   RepeatCounter testRepeatCounter = new RepeatCounter();
-    //   // string userWord = "hello";
-    //   // List<string> countList = new List<string>{};
-    //   // countList.Add(userWord);
-    //   int wordsCounted = 1;
-    //   Assert.Equal(1, wordsCounted);
-    // }
+    [Fact]
+    public void CountRepeats_FindWordInStringUpperLower_Hello()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter();
+      string userWord = "hello";
+      string userSentence = "Hello world hello";
+      int wordsCounted = 2;
+      Assert.Equal(2, wordsCounted);
+    }
   }
 }

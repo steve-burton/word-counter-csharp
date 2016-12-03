@@ -14,15 +14,11 @@ Take a user input word and find it in a second user input string that consists o
 * Output: "hello"
 
 Take a user input word and find it in a second user input string of multiple words. Return the number of matches.
-* Input: word, "hello"; string, "Hello there friend!"
-* Output: "hello"
-
-When the user input word matches the word in the input string, count one match.
-* Input: word, "hello"; string, "hello"
+* Input: word, "hello"; string, "hello world"
 * Output: 1
 
 Take a user input word and find it in a second user input string that contains multiple matches. Return the number of matches. This should account for case sensitivity.
-* Input: My friend said "hello", and I said, "hello" back.
+* Input: "Hello world hello"
 * Output: 2
 
 
