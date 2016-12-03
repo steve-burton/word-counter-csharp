@@ -10,12 +10,20 @@ namespace WordCounter.Objects
     [Fact]
     public void CountRepeats_SingleWordFind_Hello()
     {
-      //UserInput newInput = new UserInput();
       RepeatCounter testRepeatCounter = new RepeatCounter();
       string userWord = "hello";
       string userSentence = "hello";
-      string wordCount = "hello";
-      Assert.Equal("hello", testRepeatCounter.CountRepeats(userWord, userSentence, wordCount));
+      Assert.Equal("hello", testRepeatCounter.CountRepeats(userWord, userSentence));
+    }
+    [Fact]
+    public void CountRepeats_CountSingleWordFind_1()
+    {
+      RepeatCounter testRepeatCounter = new RepeatCounter();
+      // string userWord = "hello";
+      // List<string> countList = new List<string>{};
+      // countList.Add(userWord);
+      int wordsCounted = 1;
+      Assert.Equal(1, wordsCounted);
     }
   }
 }

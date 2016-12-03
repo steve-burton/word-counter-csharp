@@ -9,20 +9,24 @@ namespace WordCounter
 	{
 		public string UserWord {get; set;}
 		public string UserSentence {get; set;}
-		public string WordCount {get; set;}
+		public int wordsCounted = 0;
 
-		private static List<RepeatCounter> _instance = new List<RepeatCounter> {};
-
-		public string CountRepeats(string userWord, string userSentence, string wordCount)
+		// string[] wordArray = UserSentence.Split(" ");
+		string[] wordArray = UserSentence;
+		// List<string> countList = new List<string>{};
+		public CountRepeats(string userWord, string userSentence)
 		{
 			this.UserWord = userWord;
 			this.UserSentence = userSentence;
-			this.WordCount = wordCount;
-			if (this.UserWord == this.UserSentence)
+
+			// int wordsCounted = countList.Count;
+
+			foreach (string wordFound in wordArray)
+			if (wordFound == this.UserWord)
 			{
-				this.WordCount = "hello";
+				wordsCounted += 1;
 			}
-			return this.WordCount;
+			return wordsCounted;
 		}
 	}
 }
