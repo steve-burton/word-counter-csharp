@@ -7,9 +7,12 @@
   </head>
 	<body>
     <div class="container">
-      <h1>Here are your results</h1>
+      <h2>Here are your results</h2>
       <div class="result">
-        <h3>Your word appeared @Model times in your sentence.</h3>
+        @if (Model.wordsCounted >= 1)
+        {
+          <h3>Your word appeared @Model times in your sentence.</h3>
+        }
       </div>
     </div>
   </body>

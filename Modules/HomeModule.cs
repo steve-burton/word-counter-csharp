@@ -13,6 +13,14 @@ namespace WordCounter.Objects
 			{
 				return View["index.cshtml"];
 			};
+			Post["/results"] = _ =>
+			{
+				string userWord = Request.Form["search-word"];
+				string userSentence = Request.Form["sentence"];
+				RepeatCounter newRepeatCounter = new RepeatCounter();
+				// string finalCount = wordsCounted.ToString();
+				return View["results.cshtml"];
+			};
 		}
 	}
 }
