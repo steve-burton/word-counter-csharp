@@ -22,8 +22,8 @@ namespace WordCounter.Objects
       RepeatCounter testRepeatCounter = new RepeatCounter();
       string userWord = "hello";
       string userSentence = "hello world";
-      int wordsCounted = 1;
-      Assert.Equal(1, wordsCounted);
+      int WordsCounted = 1;
+      Assert.Equal(1, WordsCounted);
     }
 
     [Fact]
@@ -32,8 +32,8 @@ namespace WordCounter.Objects
       RepeatCounter testRepeatCounter = new RepeatCounter();
       string userWord = "hello";
       string userSentence = "Hello world hello";
-      int wordsCounted = 2;
-      Assert.Equal(2, wordsCounted);
+      int WordsCounted = 2;
+      Assert.Equal(2, WordsCounted);
     }
   }
 }

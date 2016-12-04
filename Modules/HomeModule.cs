@@ -17,7 +17,7 @@ namespace WordCounter.Objects
 			{
 				string userWord = Request.Form["search-word"];
 				string userSentence = Request.Form["sentence"];
-				int wordsCounted = 0;
+				int WordsCounted = 0;
 				RepeatCounter newRepeatCounter = new RepeatCounter();
 				// string finalCount = wordsCounted.ToString();
 				return View["results.cshtml", newRepeatCounter];

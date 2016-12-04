@@ -2,5 +2,20 @@ body {
   background-image: url(/Content/paper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10% 10% 10% 5%;
+  padding: 10% 40% 10% 2%;
+  margin-right: 5%;
+}
+.container {
+  width: 170%;
+  margin: 3% 40% 6% 3%;
+  border-radius: 20px;
+  padding: 0% 20% 3% 4%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+form {
+  padding-right: 5%;
+  margin-right: 5%;
+}
+button {
+  background-color: rgb(219, 185, 111);
 }
