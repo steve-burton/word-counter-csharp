@@ -1,5 +1,6 @@
 body {
-  background-image: url(../Content/paper.jpg);
+  background-image: url(/Content/paper.jpg);
   background-size: cover;
-  padding: 10% 40% 1% 18%;
+  background-repeat: no-repeat;
+  padding: 10% 10% 10% 5%;
 }
