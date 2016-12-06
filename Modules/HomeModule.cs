@@ -19,7 +19,7 @@ namespace WordCounter.Objects
 				string userSentence = Request.Form["sentence"];
 				int WordsCounted = 0;
 				RepeatCounter newRepeatCounter = new RepeatCounter();
-				// string finalCount = wordsCounted.ToString();
+				newRepeatCounter.CountRepeats(userWord, userSentence);
 				return View["results.cshtml", newRepeatCounter];
 			};
 		}

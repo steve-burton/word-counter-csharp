@@ -19,16 +19,12 @@ namespace WordCounter
 			string upperUserSentence = this.UserSentence.ToUpper();
 			string[] wordArray = upperUserSentence.Split(' ');
 			WordsCounted = 0;
-			// string finalCount = "";
 
-			// for(int i = 0; i < wordArray.Length; i++)
 			foreach (string wordFound in wordArray)
 			{
-				// if (wordArray[i] == upperUserWord)
 				if (wordFound == upperUserWord)
 				{
 					WordsCounted ++;
-					// finalCount = WordsCounted.ToString();
 				}
 			}
 			return WordsCounted;
