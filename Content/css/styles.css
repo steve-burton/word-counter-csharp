@@ -12,10 +12,6 @@ body {
   padding: 0% 20% 3% 4%;
   background-color: rgba(255, 255, 255, 0.3);
 }
-form {
-  padding-right: 5%;
-  margin-right: 5%;
-}
 button {
   background-color: rgb(219, 185, 111);
 }
