@@ -9,15 +9,15 @@ This program will take a user word and a string of words and return the number o
 
 These are the steps I'll take to write my code:
 
-Take a user input word and find it in a second user input string that consists of the same word.
-* Input: word, "hello"; string, "hello"
-* Output: "hello"
-
-Take a user input word and find it in a second user input string of multiple words. Return the number of matches.
-* Input: word, "hello"; string, "hello world"
+Take a user input word and find it in a second user input sentence that consists of the same word. Return the number of matches.
+* Input: word, "hello"; sentence, "hello"
 * Output: 1
 
-Take a user input word and find it in a second user input string that contains multiple matches. Return the number of matches. This should account for case sensitivity.
+Take a user input word and find it in a second user input sentence that contains multiple matches. Return the number of matches.
+* Input: "hello world hello"
+* Output: 2
+
+Take a user input word and find it in a second user sentence that contains matches in upper and lower case. Return the number of matches.
 * Input: "Hello world hello"
 * Output: 2
 

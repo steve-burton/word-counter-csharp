@@ -11,15 +11,15 @@ namespace WordCounter
 		public string UserSentence {get; set;}
 		public int WordsCounted {get; set;}
 
-		public string CountRepeats(string userWord, string userSentence)
+		public int CountRepeats(string userWord, string userSentence)
 		{
 			this.UserWord = userWord;
 			this.UserSentence = userSentence;
 			string upperUserWord = this.UserWord.ToUpper();
 			string upperUserSentence = this.UserSentence.ToUpper();
-			string[] wordArray = upperUserSentence.Split();
+			string[] wordArray = upperUserSentence.Split(' ');
 			WordsCounted = 0;
-			string finalCount = "";
+			// string finalCount = "";
 
 			// for(int i = 0; i < wordArray.Length; i++)
 			foreach (string wordFound in wordArray)
@@ -27,11 +27,11 @@ namespace WordCounter
 				// if (wordArray[i] == upperUserWord)
 				if (wordFound == upperUserWord)
 				{
-					WordsCounted += 1;
-					finalCount = WordsCounted.ToString();
+					WordsCounted ++;
+					// finalCount = WordsCounted.ToString();
 				}
 			}
-			return finalCount;
+			return WordsCounted;
 		}
 	}
 }

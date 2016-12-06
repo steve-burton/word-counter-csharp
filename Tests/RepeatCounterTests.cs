@@ -7,33 +7,53 @@ namespace WordCounter.Objects
 {
   public class RepeatCounterTest
   {
-    // [Fact]
-    // public void CountRepeats_SingleWordFind_Hello()
-    // {
-    //   RepeatCounter testRepeatCounter = new RepeatCounter();
-    //   string userWord = "hello";
-    //   string userSentence = "hello";
-    //   Assert.Equal("hello", testRepeatCounter.CountRepeats(userWord, userSentence));
-    // }
 
     [Fact]
-    public void CountRepeats_FindWordInString_Hello()
+    public void CountRepeats_FindWordInSentenceReturnCount_1()
     {
+      //Arrange
       RepeatCounter testRepeatCounter = new RepeatCounter();
       string userWord = "hello";
-      string userSentence = "hello world";
-      int WordsCounted = 1;
-      Assert.Equal(1, WordsCounted);
+      string userSentence = "hello";
+
+      //Act
+      int expected = 1;
+      var result = testRepeatCounter.CountRepeats(userWord, userSentence);
+
+      //Assert
+      Assert.Equal(1, result);
     }
 
     [Fact]
-    public void CountRepeats_FindWordInStringUpperLower_Hello()
+    public void CountRepeats_FindMultipleMatchesInSentenceReturnCount_2()
     {
+      //Arrange
+      RepeatCounter testRepeatCounter = new RepeatCounter();
+      string userWord = "hello";
+      string userSentence = "hello world hello";
+
+      //Act
+      int expected = 2;
+      var result = testRepeatCounter.CountRepeats(userWord, userSentence);
+
+      //Assert
+      Assert.Equal(2, result);
+    }
+
+    [Fact]
+    public void CountRepeats_FindMultipleMatchesUpperLower_2()
+    {
+      //Arrange
       RepeatCounter testRepeatCounter = new RepeatCounter();
       string userWord = "hello";
       string userSentence = "Hello world hello";
-      int WordsCounted = 2;
-      Assert.Equal(2, WordsCounted);
+
+      //Act
+      int expected = 2;
+      var result = testRepeatCounter.CountRepeats(userWord, userSentence);
+
+      //Assert
+      Assert.Equal(2, result);
     }
   }
 }
