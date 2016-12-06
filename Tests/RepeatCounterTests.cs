@@ -33,7 +33,6 @@ namespace WordCounter.Objects
       string userSentence = "hello world hello";
 
       //Act
-      // int expected = 2;
       var result = testRepeatCounter.CountRepeats(userWord, userSentence);
 
       //Assert
@@ -49,7 +48,6 @@ namespace WordCounter.Objects
       string userSentence = "Hello world hello";
 
       //Act
-      // int expected = 2;
       var result = testRepeatCounter.CountRepeats(userWord, userSentence);
 
       //Assert
